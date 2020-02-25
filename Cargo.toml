@@ -27,6 +27,10 @@ tokio = { version = "0.2", features = ["rt-core"] }
 tokio-util = { version = "0.2", features = ["codec"] }
 tower-service = "0.3"
 
+[dependencies.auto_impl]
+git = "https://github.com/auto-impl-rs/auto_impl"
+branch = "master"
+
 [dev-dependencies]
 env_logger = "0.7"
 tokio = { version = "0.2", features = ["io-std", "macros", "test-util"] }
