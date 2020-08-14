@@ -34,6 +34,10 @@ env_logger = "0.7"
 tokio = { version = "0.2", features = ["io-std", "io-util", "macros", "net", "test-util"] }
 tower-test = "0.3"
 
+[features]
+default = ["proposed"]
+proposed = ["lsp-types/proposed"]
+
 [workspace]
 members = [".", "./tower-lsp-macros"]
 default-members = ["."]
